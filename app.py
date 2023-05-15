@@ -1,7 +1,7 @@
 import openai
 import gradio as gr
 import os
-from huggingface_hub import SpacesApi
+import huggingface_hub
 
 
 openai.api_key = os.environ['OpenAI-API']
@@ -23,7 +23,7 @@ def chatbot(input):
 inputs = gr.inputs.Textbox(lines=3, label="Ask for Remedies:")
 outputs = gr.outputs.Textbox(label="My Suggestion:")
 if inputs == "_refresh_":
-    api.restart_space()
+    restart_space()
 gr.Interface(fn=chatbot,
              inputs=inputs, 
              outputs=outputs, 
