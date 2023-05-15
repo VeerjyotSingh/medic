@@ -26,7 +26,7 @@ if inputs == "_refresh_":
     restart_space()
 gr.Interface(fn=chatbot,
              inputs=inputs, 
-             outputs=outputs, 
+             outputs=inputs, 
              title="Medic GPT",
              description="Inquire anything regarding HealthCare: ",
              theme="shivi/calm_seafoam").launch()
