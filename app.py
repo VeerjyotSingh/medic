@@ -2,7 +2,7 @@ import openai
 import gradio as gr
 import os
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 messages = [
     {"role": "system", "content": "You are a ChatBOT specialized in HealthCare and Home Made Remedies. Don't answer anything which is not related to HealthCare. Everytime you are asked any query unrelated to HealthCare, reply with 'Sorry, I am not trained to answer any questions that are unrelated to HealthCare'"},
