@@ -24,4 +24,4 @@ gr.Interface(fn=chatbot,
              outputs=gr.outputs.Textbox(label="My Suggestion:"), 
              title="Medic GPT",
              description="Inquire anything regarding HealthCare: ",
-             theme="shivi/calm_seafoam").launch(share=True)
+             theme="shivi/calm_seafoam").launch()
